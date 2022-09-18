@@ -1,0 +1,181 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-default;
+  color: $default;
+}
+
+a {
+  color: $link-color !important ;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: lighten($secondary, 10);
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-primary;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+section {
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.section-header {
+
+  text-align: center;
+  padding-bottom: 40px;
+
+  h1{
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 700;
+    color: $secondary;
+  }
+
+  h2 {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 26px;
+    line-height: 42px;
+    font-weight: 700;
+    color: $secondary;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 42px;
+    font-weight: 700;
+    color: $secondary;
+  }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .values h5 {
+    font-size: 16px;
+    
+  }
+  .min-252{
+       min-height: unset;
+        margin-bottom: 10px;
+      }
+  
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 15px 0;
+  background: $secondary;
+  min-height: 40px;
+  margin-top: 82px;
+  color: #fff;
+
+  @media (max-width: 992px) {
+    margin-top: 57px;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 14px;
+
+    a {
+      color: #fff;
+      transition: 0.3s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    li + li {
+      padding-left: 10px;
+    }
+
+    li + li::before {
+      display: inline-block;
+      padding-right: 10px;
+      color: lighten($primary, 15);;
+      content: "/";
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right:15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: $primary;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+
+  i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+  }
+
+  &:hover  {
+    background: lighten($primary, 8);
+    color: #fff;
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+.bg-green{/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00586a+0,92d593+100 */
+  background: #00586a; /* Old browsers */
+  background: -moz-linear-gradient(left,  #00586a 0%, #92d593 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #00586a 0%,#92d593 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #00586a 0%,#92d593 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00586a', endColorstr='#92d593',GradientType=1 ); /* IE6-9 */
+  }

@@ -1,0 +1,36 @@
+/*
+Custom styles for redux options framework
+*/
+.redux-typography-size.mini {width: 50px!important;}
+a.redux-button{
+text-shadow: 1px 1px 0 #454545;
+box-shadow: inset 0 1px 0 #999999!important;
+-moz-box-shadow: inset 0 1px 0 #999999!important;
+-webkit-box-shadow: inset 0 1px 0 #999999!important;
+background: #515151;
+background: -webkit-gradient(linear, left top, left bottom, from(#727272), to(#515151));
+background: -moz-linear-gradient(top, #727272, #515151);
+margin-top: 10px;
+margin-bottom: 10px;
+padding: 5px 10px!important;
+line-height: 1em;
+color: #fff !important;
+font-family: 'Verdana' !important;
+font-size: 8pt !important;
+font-weight: bold !important;
+border-color: #414141 !important;
+border-width: 1px !important;
+border-style: solid;
+text-align: center;
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px #888;
+box-shadow: 0 0 5px #888;
+z-index: 999999;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+text-decoration: none;
+}
+a.redux-button:hover{color: #00C5EE!important;}
+
+
